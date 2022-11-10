@@ -1,0 +1,299 @@
+/* 
+    font-weight:300, 400, 700
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.active {
+  font-weight: 700;
+  text-decoration: underline;
+  color: rgb(244, 38, 110);
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: whitesmoke;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 0 30px;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./images/bg1.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.header-content {
+  margin-bottom: 150px;
+  color: whitesmoke;
+  text-align: center;
+}
+.header-content h2 {
+  font-size: 4vmin;
+}
+
+.line {
+  width: 150px;
+  height: 5px;
+  background-color: rgb(244, 38, 110);
+  border-radius: 5px;
+  margin: 10px auto;
+}
+
+.header-content h1 {
+  font-size: 7vmin;
+  margin: 70px 0 50px;
+}
+
+.ctn {
+  padding: 8px 15px;
+  color: whitesmoke;
+  background-color: rgb(244, 38, 110);
+  border-radius: 30px;
+}
+
+.menu-btn {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* section  */
+section {
+  width: 80%;
+  margin: 80px auto;
+}
+.title {
+  text-align: center;
+  font-size: 4vmin;
+  color: darkblue;
+}
+.row {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.row .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.col img {
+  width: 80%;
+}
+h4 {
+  font-size: 3vmin;
+  color: darkblue;
+  margin: 20px auto;
+}
+p {
+  color: gray;
+  padding: 0px 40px;
+}
+
+.events .ctn {
+  margin-top: 30px;
+}
+
+.explore {
+  width: 100%;
+  height: 80vh;
+  background-image: url("./images/bg2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.explore-content {
+  width: 60%;
+  padding: 50px;
+  color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.explore-content .line {
+  margin-bottom: 50px;
+}
+
+.explore-content h1 {
+  font-size: 7vmin;
+  margin: 50px;
+}
+.explore-content p {
+  color: black;
+}
+.explore-content .ctn {
+  margin-top: 40px;
+}
+/* end explore  */
+
+.tours .row .col {
+  width: 50%;
+}
+.content-col {
+  width: 40%;
+  }.image-col {
+    width: 60%;
+  }
+.content-col .line {
+  margin-left: -1px;
+}
+.content-col h1 {
+  font-size: 7vmin;
+  color: darkblue;
+}
+.content-col p {
+  padding: 0;
+  margin: 30px auto;
+}
+
+.tours .image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+.image-gallery img {
+  max-width: 250px;
+  margin: 10px;
+}
+
+.content-col .ctn {
+  margin-left: -450px;
+}
+/* end tours  */
+
+.footer{
+  width: 100%;
+  min-height: 100px;
+  padding: 20px 80px;
+  margin: 0;
+  background-color: darkblue;
+  text-align: center;
+}
+.footer p{
+  color: whitesmoke;
+  margin: 20px auto;
+}
+/* Mobile Device  */
+@media only screen and (max-width: 760px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  .nav-links {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(50, 49, 49);
+    margin-top: -900px;
+    transition: all 0.5s ease-out;
+  }
+  .mobile-menu {
+    margin-top: 0px;
+    border-bottom-right-radius: 30%;
+  }
+  .nav-links li {
+    margin: 30px auto;
+  }
+
+  /* evnets  */
+    .row{
+      flex-direction: column;
+    }
+    .row .col{
+      margin: 20px auto;
+    }
+    .col img{
+      width: 100%;
+    }
+
+    .explore-content{
+      width: 100%;
+    }
+
+    .tours .col{
+      width: 100%;
+    }
+
+    .image-gallery{
+      justify-content: center;
+      align-items: center;
+    }
+    .content-col .ctn {
+      margin-left: 0px;
+    }
+    .footer{
+      padding: 10px;
+    }
+}
+
+/* animation */
+img{
+  transition: transform 0.3s ease;
+}
+img:hover{
+  transform: scale(1.1);
+}
+.ctn:hover{
+background: whitesmoke;
+color:rgb(244, 38, 110);
+box-shadow: 2px 2px 5px #1c1c1c;
+}
+li:hover{
+  color:rgb(244, 38, 110);
+  cursor: pointer;
+}

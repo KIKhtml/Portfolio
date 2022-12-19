@@ -83,10 +83,12 @@ header ul li i{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 100px;
 }
 
 .content .textBox {
   max-width: 600px;
+
 }
 
 .content .textBox h2 {

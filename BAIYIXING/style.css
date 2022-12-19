@@ -31,7 +31,12 @@ header {
 
 header .logos {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+}
+
+header .logos img{
+  width: 50px;
+  margin-right: 10px;
 }
 header .sub-logo {
   display: flex;
